@@ -1,0 +1,14 @@
+.admin-dashboard {
+  display: flex;
+  height: 100vh;
+  background-color: #f9fafb;
+  font-family: 'Poppins', sans-serif;
+}
+
+.admin-dashboard-content {
+  flex: 1;
+  margin-left: 16rem;
+  overflow-y: auto;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
