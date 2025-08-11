@@ -1,0 +1,48 @@
+.custom-container {
+  padding: 1.5rem; 
+}
+.summary-icons{
+ color: #0d9488;
+}
+
+.custom-title {
+  font-size: 1.5rem; 
+  font-weight: 600;  
+  margin: 0;
+}
+
+.custom-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem; 
+  margin-top: 1.5rem;
+}
+.leave-details-section {
+  margin-top: 3rem; 
+}
+
+.leave-details-title {
+  text-align: center;
+  font-size: 1.5rem; 
+  font-weight: 600;  
+  margin: 0;
+}
+
+.leave-details-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem; 
+  margin-top: 1.5rem; 
+}
+
+
+
+@media (min-width: 768px) {
+  .custom-grid {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+
+    .leave-details-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
