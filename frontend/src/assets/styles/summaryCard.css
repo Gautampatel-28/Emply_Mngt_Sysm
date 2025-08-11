@@ -1,0 +1,39 @@
+.summary-card {
+  background-color: white;
+  border-radius: 0.375rem; 
+  display: flex;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.summary-icon {
+  background-color: #0d9488;
+  color: white;
+  font-size: 1.875rem; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem; 
+  padding-right: 1rem;
+}
+
+.summary-content {
+  padding-left: 1rem; 
+  padding-top: 0.25rem; 
+  padding-bottom: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.summary-text {
+  font-size: 1.125rem; 
+  font-weight: 400; 
+  margin: 0;
+}
+
+.summary-number {
+  font-size: 1.25rem; 
+  font-weight: 500; 
+  margin: 0;
+}
