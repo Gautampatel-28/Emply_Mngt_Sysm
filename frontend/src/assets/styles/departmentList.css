@@ -1,0 +1,118 @@
+
+.department-list-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  font-family: Arial, sans-serif;
+}
+
+.department-list-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.department-list-header h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.department-list-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.department-list-actions input[type="text"] {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.department-list-actions input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+.department-list-actions .add-btn {
+  background: teal;
+  color: white;
+  padding: 8px 14px;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.2s ease-in-out;
+}
+
+.department-list-actions .add-btn:hover {
+  background: #006666;
+}
+
+.department-list-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  font-family: Arial, sans-serif;
+}
+
+.department-list-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.department-list-header h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.department-list-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.department-list-actions input[type="text"] {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.department-list-actions input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+.department-list-actions .add-btn {
+  background: teal;
+  color: white;
+  padding: 8px 14px;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.2s ease-in-out;
+}
+
+.department-list-actions .add-btn:hover {
+  background: #006666;
+}
+
+
+
+
