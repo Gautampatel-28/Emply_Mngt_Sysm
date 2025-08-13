@@ -1,0 +1,70 @@
+
+.add-department-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+
+.add-department-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+.add-department-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.add-department-container label {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+
+.add-department-container input,
+.add-department-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.add-department-container input:focus,
+.add-department-container textarea:focus {
+  border-color: #007bff;
+}
+
+
+.add-department-container textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+
+.add-department-container button {
+  background: #0d9488;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.add-department-container button:hover {
+  background: #096a62;
+}
