@@ -1,6 +1,24 @@
 import { useNavigate } from "react-router-dom";
 import "../styles/departmentHelper.css";
 
+export const DepartmentButton = ({ Id }) => {
+  const navigate = useNavigate();
+  return (
+    <div className="department-btn-group">
+      <button
+        type="button"
+        className="btn-edit"
+        onClick={() => navigate(`/admin-dashboard/department/${Id}`)}
+      >
+        Edit
+      </button>
+      <button type="button" className="btn-delete">
+        Delete
+      </button>
+    </div>
+  );
+};
+
 export const column = [
   {
     name: "Sr no",
@@ -15,23 +33,3 @@ export const column = [
     selector: (row) => row.action,
   },
 ];
-
-export const DepartmentButton = ({ Id }) => {
-  const navigate = useNavigate();
-  return (
-    <>
-      <div className="department-btn-group">
-        <button
-          type="button"
-          className="btn-edit"
-          onClick={() => navigate(`/admin-dashboard/department/${Id}`)}
-        >
-          Edit
-        </button>
-        <button type="button" className="btn-delete">
-          Delete
-        </button>
-      </div>
-    </>
-  );
-};
