@@ -1,0 +1,63 @@
+.edit-department-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.edit-department-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.edit-department-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.edit-department-container label {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.edit-department-container input,
+.edit-department-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.edit-department-container input:focus,
+.edit-department-container textarea:focus {
+  border-color: #007bff;
+}
+
+.edit-department-container textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.edit-department-container button {
+  background: #0d9488;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.edit-department-container button:hover {
+  background: #096a62;
+}
