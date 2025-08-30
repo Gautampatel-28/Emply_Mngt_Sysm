@@ -27,7 +27,12 @@ const AdminSidebar = () => {
             <FaTachometerAlt />
             <span>Dashboard</span>
           </NavLink>
-          <NavLink to="/admin-dashboard" className="sidebar-link">
+          <NavLink
+            to="/admin-dashboard/employees"
+            className={({ isActive }) =>
+              `${isActive ? "active-link" : ""} sidebar-link`
+            }
+          >
             <FaUsers />
             <span>Employee</span>
           </NavLink>
