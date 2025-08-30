@@ -8,6 +8,12 @@ import axios from "axios";
 const DepartmentList = () => {
   const [departments, setDepartments] = useState([]);
   const [depLoading, setDepLoading] = useState(false);
+  const [filteredDepartments, setFilteredDepartments] = useState([])
+
+  const onDepartmentDelete = async (id) => {
+    const data = departments.filter((dep) => dep._id !== id);
+    setDepartments(data);
+  };
 
   useEffect(() => {
     const fetchDepartments = async () => {
@@ -28,9 +34,15 @@ const DepartmentList = () => {
             _id: dep._id,
             sno: sno++,
             dep_name: dep.dep_name,
-            action: <DepartmentButton Id={dep._id} />,
+            action: (
+              <DepartmentButton
+                Id={dep._id}
+                onDepartmentDelete={onDepartmentDelete}
+              />
+            ),
           }));
           setDepartments(data);
+          setFilteredDepartments(data)
         }
 
         console.log(response.data);
@@ -46,6 +58,12 @@ const DepartmentList = () => {
     fetchDepartments();
   }, []);
 
+  const filterDepartments = (e) => {      //filter data 
+    const records = departments.filter((dep) =>
+    dep.dep_name.toLowerCase().includes(e.target.value.toLowerCase()));
+    setFilteredDepartments(records)
+  }
+
   return (
     <>
       {depLoading ? (
@@ -57,14 +75,18 @@ const DepartmentList = () => {
           </div>
 
           <div className="department-list-actions">
-            <input type="text" placeholder="Search by department name" />
+            <input
+              type="text"
+              placeholder="Search by department name"
+              onChange={filterDepartments}
+            />
             <Link to="/admin-dashboard/add-department" className="add-btn">
               Add New Department
             </Link>
           </div>
 
           <div className="deprt-dataTable">
-            <DataTable columns={column} data={departments} />
+            <DataTable columns={column} data={filteredDepartments} pagination/>
           </div>
         </div>
       )}
