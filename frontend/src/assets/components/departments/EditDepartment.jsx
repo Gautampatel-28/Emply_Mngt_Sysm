@@ -26,7 +26,7 @@ const EditDepartment = () => {
           setDepartment(response.data.department);
         }
 
-        console.log(response.data);
+        // console.log(response.data);
       } catch (error) {
         if (error.response && !error.response.data.success) {
           alert(error.response.data.error);
@@ -57,11 +57,12 @@ const EditDepartment = () => {
         }
       );
       if (response.data.success) {
+        console.log("Department updated successfully, navigating...");
         navigate("/admin-dashboard/departments");
       }
     } catch (error) {
       console.log(error);
-      if (error.response && !error.response.data.error) {
+      if (error.response && error.response.data.error) {
         alert(error.response.data.error);
       }
     }
@@ -109,3 +110,5 @@ const EditDepartment = () => {
 };
 
 export default EditDepartment;
+
+
