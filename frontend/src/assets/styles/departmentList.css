@@ -42,8 +42,8 @@
   border-color: #007bff;
 }
 
-.department-list-actions .add-btn {
-  background: teal;
+.department-list-actions .add-btn-department {
+  background: #c2c71a;
   color: white;
   padding: 8px 14px;
   font-size: 14px;
@@ -52,7 +52,7 @@
   transition: background 0.2s ease-in-out;
 }
 
-.department-list-actions .add-btn:hover {
+.department-list-actions .add-btn-department:hover {
   background: #006666;
 }
 
@@ -99,8 +99,8 @@
   border-color: #007bff;
 }
 
-.department-list-actions .add-btn {
-  background: teal;
+.department-list-actions .add-btn-department {
+  background: #c2c71a;
   color: white;
   padding: 8px 14px;
   font-size: 14px;
@@ -109,8 +109,8 @@
   transition: background 0.2s ease-in-out;
 }
 
-.department-list-actions .add-btn:hover {
-  background: #006666;
+.department-list-actions .add-btn-department:hover {
+ background: #959927;
 }
 
 
