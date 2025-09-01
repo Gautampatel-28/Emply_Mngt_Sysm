@@ -50,7 +50,6 @@ const addEmployee = async (req, res) => {
       password: hashPassword,
       role,
       profileImage: req.file ? `/public/uploads/${req.file.filename}` : "",
-
     });
 
     const savedUser = await newUser.save();
@@ -113,7 +112,7 @@ const updateEmployee = async (req, res) => {
   try {
     const { id } = req.params;
     const { name, martialStatus, designation, department, salary } = req.body;
-
+    
     const employee = await Employee.findById({ _id: id });
     if (!employee) {
       return res
@@ -141,11 +140,11 @@ const updateEmployee = async (req, res) => {
     );
 
     if (!updateEmployee || !updateUser) {
-      return res.status(404).json({ success: false, error: "document not found" });
+      return res
+        .status(404)
+        .json({ success: false, error: "document not found" });
     }
-    return res
-      .status(200)
-      .json({ success: true, update: "Employees Updated" });
+    return res.status(200).json({ success: true, update: "Employees Updated" });
   } catch (error) {
     return res
       .status(500)
@@ -153,4 +152,23 @@ const updateEmployee = async (req, res) => {
   }
 };
 
-export { addEmployee, getEmployees, upload, getEmployee, updateEmployee };
+const fetchEmployeesByDepId = async (req, res) => {
+  const { id } = req.params;
+  try {
+    const employees = await Employee.find({ department: id });
+    return res.status(200).json({ success: true, employees });
+  } catch (error) {
+    return res
+      .status(500)
+      .json({ success: false, error: "get employeesbyDepId server error" });
+  }
+};
+
+export {
+  addEmployee,
+  getEmployees,
+  upload,
+  getEmployee,
+  updateEmployee,
+  fetchEmployeesByDepId,
+};
