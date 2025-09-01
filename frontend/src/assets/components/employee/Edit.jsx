@@ -39,7 +39,6 @@ const Edit = () => {
           }
         );
 
-        console.log("✅ Employee API Response:", response.data);
         // if (response.data.success) {
         //   setEmployee(response.data.employees || {});
         // }
