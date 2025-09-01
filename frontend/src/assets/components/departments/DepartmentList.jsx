@@ -80,7 +80,7 @@ const DepartmentList = () => {
               placeholder="Search by department name"
               onChange={filterDepartments}
             />
-            <Link to="/admin-dashboard/add-department" className="add-btn">
+            <Link to="/admin-dashboard/add-department" className="add-btn-department">
               Add New Department
             </Link>
           </div>
