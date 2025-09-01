@@ -60,7 +60,7 @@ const AddDepartment = () => {
               placeholder="Description"
             ></textarea>
           </div>
-          <button type="submit">Add Department</button>
+          <button type="submit" className="department-button">Add Department</button>
         </form>
       </div>
     </>
