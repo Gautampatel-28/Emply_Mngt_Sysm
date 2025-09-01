@@ -13,6 +13,8 @@ import List from "./assets/components/employee/List";
 import Add from "./assets/components/employee/Add";
 import View from "./assets/components/employee/View";
 import Edit from "./assets/components/employee/Edit";
+import Add_salary from "./assets/components/salary/Add_salary";
+import View_salary from "./assets/components/salary/View_salary";
 
 function App() {
   return (
@@ -35,10 +37,14 @@ function App() {
             <Route path="/admin-dashboard/departments" element={<DepartmentList />}></Route>
             <Route path="/admin-dashboard/add-department" element={<AddDepartment />}></Route>
             <Route path="/admin-dashboard/department/:id" element={<EditDepartment />}></Route>
+
             <Route path="/admin-dashboard/employees" element={<List />}></Route>
             <Route path="/admin-dashboard/add-employee" element={<Add />}></Route>
             <Route path="/admin-dashboard/employees/:id" element={<View />}></Route>
             <Route path="/admin-dashboard/employees/edit/:id" element={<Edit />}></Route>
+            <Route path="/admin-dashboard/employees/salary/:id" element={< View_salary/>}></Route>
+
+            <Route path="/admin-dashboard/salary/add" element={<Add_salary />}></Route>
             
 
           </Route>
