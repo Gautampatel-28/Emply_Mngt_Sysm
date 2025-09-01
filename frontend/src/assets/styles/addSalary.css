@@ -1,0 +1,92 @@
+.add-salary-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-Title-salary {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+form {
+  width: 100%;
+}
+
+.formgridSalary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.formgroup,
+.formgroupSalary {
+  display: flex;
+  flex-direction: column;
+}
+
+.formgroup label,
+.formgroupSalary label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.formgroup input,
+.formgroup select,
+.formgroupSalary input,
+.formgroupSalary select {
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.formgroup input:focus,
+.formgroup select:focus,
+.formgroupSalary input:focus,
+.formgroupSalary select:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 6px rgba(0, 123, 255, 0.3);
+}
+
+.submit-btn-salary {
+  margin-top: 25px;
+  width: 100%;
+  padding: 14px;
+  background: #ee0f0f;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn-salary:hover {
+  background: #ee0f0f;
+}
+
+.Toastify__toast {
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .formgridSalary {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
