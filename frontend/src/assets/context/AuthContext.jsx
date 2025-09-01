@@ -45,11 +45,13 @@ const AuthContext = ({ children }) => {
   const login = (user) => {
     setUser(user);
     localStorage.setItem("token", user?.token);
+    console.log("Emp login in ✔️")
   };
 
   const logout = () => {
     setUser(null);
     localStorage.removeItem("token");
+    console.log("User logged out ✔️")
   };
   return (
     <>
