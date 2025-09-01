@@ -49,7 +49,12 @@ const AdminSidebar = () => {
             <FaCalendarAlt />
             <span>Leave</span>
           </NavLink>
-          <NavLink to="/admin-dashboard" className="sidebar-link">
+          <NavLink
+            to="/admin-dashboard/salary/add"
+            className={({ isActive }) =>
+              `${isActive ? "active-link" : ""} sidebar-link`
+            }
+          >
             <FaMoneyBillWave />
             <span>Salary</span>
           </NavLink>
